@@ -22,12 +22,10 @@ This project uses the **BFRO Bigfoot sightings dataset** and creates two visuali
 
 Below is the first exported Altair chart, embedded directly into the page using an HTML `<iframe>`:
 
-<iframe
-  src="{{ 'assets\json\bfro_year_season.json' | relative_url }}"
-  width="100%"
-  height="420"
-  style="border:none;"
-></iframe>
+<vegachart
+  schema-url="{{ '/assets/json/bfro_year_season.json' | relative_url }}"
+  style="width: 100%"
+></vegachart>
 
 ### **Explanation**
 
@@ -45,12 +43,10 @@ This plot makes it easy to see that reports are typically more common in the sum
 
 This second Altair chart uses a **dropdown selector** to filter the distribution of sightings by state:
 
-<iframe
-  src="{{ 'assets\json\bfro_year_season.json' | relative_url }}"
-  width="100%"
-  height="380"
-  style="border:none;"
-></iframe>
+<vegachart
+  schema-url="{{ '/assets/json/bfro_season_state.json' | relative_url }}"
+  style="width: 100%"
+></vegachart>
 
 ### **Explanation**
 
